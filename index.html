@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Display Adjuster</title>
+    <link rel="stylesheet" href="./stylesheet/style.css" />
+  </head>
+  <body>
+    <h2>Updating CSS Variables with <span class="hilite">JS</span></h2>
+    <div class="controls">
+      <label for="sizing">Image Size</label>
+      <input
+        type="range"
+        id="imgSize"
+        name="imgH imgW"
+        class="width"
+        data-sizing="px"
+        min="100"
+        max="700"
+      />
+
+      <label for="spacing"> Spacing:</label>
+      <input
+        type="range"
+        id="spacing"
+        name="spacing"
+        data-sizing="px"
+        min="10"
+        max="200"
+        value="10"
+      />
+
+      <label for="blur">Blur:</label>
+      <input
+        type="range"
+        id="blur"
+        name="blur"
+        data-sizing="px"
+        min="0"
+        max="25"
+        value="10"
+      />
+
+      <label for="baseColor">Base Color:</label>
+      <input type="color" id="baseColor" name="baseColor" value="#ffc600" />
+    </div>
+    <img
+      src="./images/matteo-catanese-PI8Hk-3ZcCU copy.jpg"
+      alt="a view of a city through a metal fence"
+      height="500px"
+      width="800px"
+    />
+    <script src="./JS/app.js"></script>
+  </body>
+</html>

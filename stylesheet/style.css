@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px;
+  background: #193549;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+label {
+  font-size: 30px;
+}
+:root {
+  --baseColor: #ff6600;
+  --spacing: 10px;
+  --blur: 10px;
+  --imgH: 500px;
+  --imgW: 800px;
+}
+img {
+  padding: var(--spacing);
+  background: var(--baseColor);
+  filter: blur(var(--blur));
+  height: var(--imgH);
+  width: var(--imgW);
+}
+
+.hilite {
+  color: var(--baseColor);
+}
